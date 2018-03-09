@@ -1,4 +1,7 @@
 <html>
+
+<link rel="stylesheet" href="css/style.css">
+
 <head>
     <meta charset="utf-8">
     <title>Currency Converter</title>
@@ -6,7 +9,31 @@
 </head>
 
 <body>
-<script src="js/converter.js"></script>
+    <h2>Currency Converter</h2>
+    <p>Type your amount, select the currencies to convert and click Convert.</p>
+   
+    <div id="converter">
+    <input id="amount" type="number" placeholder="Amount">
+    <br><br>
+    From
+    <select id="from">
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="USD">USD</option>
+    </select>
+    to
+    <select id="to">
+        <option value="USD">USD</option>
+        <option value="GBP">GBP</option>
+        <option value="EUR">EUR</option>
+    </select>
+    </div>
 
+    <!--Click button to convert-->
+    <br><br>
+    <button type="button" onclick="clickButton()">Convert</button>
+    <p id="buttonResult"></p>
+
+<script src="js/converter.js"></script>
 </body>
 </html>
