@@ -15,24 +15,28 @@
     <div id="converter">
     <input id="amount" type="number" placeholder="Amount">
     <br><br>
-    From
+    <span>From</span>
     <select id="from">
         <option value="EUR">EUR</option>
         <option value="GBP">GBP</option>
         <option value="USD">USD</option>
     </select>
-    to
+    <span>to</span>
     <select id="to">
         <option value="USD">USD</option>
         <option value="GBP">GBP</option>
         <option value="EUR">EUR</option>
     </select>
+        </div>
     </div>
+
+    <div id="result">
+        <span>The converted amount is:</span>
+          <div id="converted"></div>
 
     <!--Click button to convert-->
     <br><br>
-    <button type="button" onclick="clickButton()">Convert</button>
-    <p id="buttonResult"></p>
+    <button type="button" id="btn" onclick="converted">Convert</button>
 
 <script src="js/converter.js"></script>
 </body>
